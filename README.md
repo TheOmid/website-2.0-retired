@@ -6,6 +6,7 @@ Decided to rewrite my personal website in GatsbyJS and TailwindCSS to learn more
 
 Future goals:
 Finish project component and page
+Add Resume
 Finish blog and blog post component
 Optimize to deploy to Netlify
 Make wave animation faster
