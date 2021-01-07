@@ -24,25 +24,19 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+  <div class="bg-body bg-cover flex flex-col">
+    <div class="flex-grow flex-shrink-0">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
+        <div class="my-0 mx-auto max-w-5xl py-6 px-4">
+
+          <main class="overflow-hidden">{children}</main>
+        </div>
+    </div>
+    <footer class="bg-accent-1 border-t border-accent-2 bg-footer flex-shrink-0 py-4 text-center tracking-tight">
+      © Omid Shahidi, {new Date().getFullYear()}. Built with <a rel="noreferrer" target="_blank" href="https://gatsbyjs.com">Gatsby</a> + 
+       <a rel="noreferrer" target="_blank" href="https://tailwindcss.com/"> TailwindCSS</a>
+    </footer>
+  </div>
   )
 }
 
